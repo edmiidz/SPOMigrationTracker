@@ -3,7 +3,14 @@
   "name": "SPOMigrationTracker",
   "version": "1.0",
   "description": "Switch between old and new Migrated sites",
-  "permissions": ["activeTab"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": "images/logo.png"
